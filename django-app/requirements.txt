@@ -1,0 +1,23 @@
+# ============================================================
+# requirements.txt — Production Dependencies
+# Pinned exact versions for reproducibility
+# Install with: pip install -r requirements.txt
+# ============================================================
+
+# Core Framework
+Django==4.2.5
+
+# REST API support
+djangorestframework==3.14.0
+
+# Environment variable management
+python-decouple==3.8
+
+# Database adapter (PostgreSQL for production)
+psycopg2-binary==2.9.7
+
+# WSGI server for production
+gunicorn==21.2.0
+
+# Cross-Origin Resource Sharing
+django-cors-headers==4.2.0

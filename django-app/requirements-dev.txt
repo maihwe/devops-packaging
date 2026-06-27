@@ -1,0 +1,25 @@
+# ============================================================
+# requirements-dev.txt — Development Only Dependencies
+# Install with: pip install -r requirements-dev.txt
+# These NEVER go to production
+# ============================================================
+
+# Include all production dependencies first
+-r requirements.txt
+
+# Testing
+pytest==7.4.2
+pytest-django==4.5.2
+pytest-cov==4.1.0
+
+# Security audit
+pip-audit==2.6.1
+
+# Code formatting
+black==23.7.0
+
+# Linting
+flake8==6.1.0
+
+# Local dev server extras
+django-extensions==3.2.3

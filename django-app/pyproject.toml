@@ -1,0 +1,33 @@
+# ============================================================
+# pyproject.toml — Modern Python Packaging Configuration
+# PEP 517/518 compliant
+# ============================================================
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "devops-django-app"
+version = "1.0.0"
+description = "A sample Django app demonstrating software packaging best practices"
+authors = [
+    { name = "DevOps Learner", email = "learner@devops.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = ["devops", "django", "packaging"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings.development"
+python_files = ["test_*.py"]
+addopts = "--cov=core --cov-report=term-missing"
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.flake8]
+max-line-length = 88
+exclude = [".git", "__pycache__", "migrations"]
