@@ -1,0 +1,27 @@
+# ============================================================
+# .gitignore — Files that must NEVER go to GitHub
+# ============================================================
+
+# Environment files with real secrets
+.env
+.env.production
+
+# Installed packages (recreated by npm install)
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
