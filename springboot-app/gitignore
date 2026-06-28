@@ -1,0 +1,30 @@
+# ============================================================
+# .gitignore — Files that must NEVER go to GitHub
+# ============================================================
+
+# Maven build output (recreated by mvn package)
+target/
+
+# But keep the JAR name reference in docs
+!target/*.jar.original
+
+# Environment secrets
+.env
+.env.production
+*.env
+
+# IDE
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
