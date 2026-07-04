@@ -9,7 +9,7 @@ build-backend = "setuptools.backends.legacy:build"
 
 [project]
 name = "devops-django-app"
-version = "1.0.0"
+version = "1.0.1"
 description = "A sample Django app demonstrating software packaging best practices"
 authors = [
     { name = "DevOps Learner", email = "learner@devops.com" }
