@@ -1,6 +1,10 @@
 {
   "name": "devops-node-app",
   "version": "1.0.0",
+  "files": [
+    "src/",
+    "env.example"
+  ],
   "description": "A sample Node.js app demonstrating software packaging best practices",
   "main": "src/index.js",
   "author": "DevOps Learner",
